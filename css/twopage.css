@@ -203,10 +203,13 @@
 }
 
 
-.area2 .work-list .commonlist .cancel-icon-1 {
+.area2 .work-list .commonlist .cancel-icon {
   cursor: pointer;
-  padding-left: 20px;
-  width: 10%;
-  line-height: 100px;
-  background-color: royalblue;
+  height: 25px;
+  margin: 37px;
+}
+
+.area2 .work-list .commonlist .cancel-icon:hover{
+  font-size: 30px;
+  transition: .3s;
 }
