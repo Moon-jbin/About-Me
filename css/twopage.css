@@ -9,20 +9,21 @@
 .area1{
   width: 30%;
   height: 600px;
-  background-color: rgb(224,222,220);
+  background-color: #fff;
   margin: 20px 20px 20px 20px;
-  border: black solid 3px;
+  border: #d19bf5 solid 2px;
   border-radius: 10%;
   position: relative;
+  box-shadow: 4px 4px 10px #d19bf5;
 }
 
 .area1 .area1-title{
   background-color: none;
+  right: 43%;
   position: absolute;
-  right: 35%;
   margin: 20px auto;
   font-size: 20px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Nanum Brush Script', cursive;
   font-weight: 900;
 }
 
@@ -35,7 +36,7 @@
 }
 
 .area1 .schedule .sch-lists{
-  border-bottom: black dashed 2px;
+  border-bottom: rgb(170, 167, 167) dashed .5px;
   width: 100%;
   padding: 4px 10px;
   box-sizing: border-box;
@@ -96,7 +97,7 @@
 
 .schedule .material-icons{
   position: relative;
-  top: 10px;
+  top: 6px;
   right: 10px;
 }
 .schedule .material-icons:hover{
@@ -118,28 +119,26 @@
   display: flex;
   width: 100%;
   height: 100px;
-  border: 3px solid black;
+  border: 1px solid #c7c4c4;
   box-sizing: border-box;
-  background-color: rgb(224,222,220);
+  background-color: #fff  ;
   border-radius: 20px;
   margin: 24px;
   font-family: 'Nanum Pen Script', cursive;
   font-size: 20px;
+  box-shadow: 4px 4px 10px #c7c4c4;
 }
 
 .area2 .work-list .commonlist .list-1 {
   margin-top: 37px;
-  width: 50%;
+  width: 505px;
   height: 20px;
   padding-left: 40px;
-  
- 
-  
 
 }
 
 .area2 .work-list .list-2 {
-  width: 50%;
+  width: 505px;
   padding-left: 40px;
   margin-top: 37px;
   height: 20px;
@@ -147,7 +146,7 @@
 }
 
 .area2 .work-list .list-3 {
-  width: 50%;
+  width: 505px;
   padding-left: 40px;
   margin-top: 37px;
   height: 20px;
@@ -155,7 +154,7 @@
 }
 
 .area2 .work-list .list-4 {
-  width: 50%;
+  width: 505px;
   padding-left: 40px;
   margin-top: 37px;
   height: 20px;
@@ -163,7 +162,7 @@
 }
 
 .area2 .work-list .list-5 {
-  width: 50%;
+  width: 505px;
   padding-left: 40px;
   margin-top: 37px;
   height: 20px;
@@ -174,42 +173,154 @@
   padding-left: 20px;
   width: 10%;
   line-height: 100px;
-  background-color: purple;
+  border-right: 1px solid #b5b5b5;
 }
 
 .area2 .work-list .this-year-2{
   padding-left: 20px;
   width: 10%;
   line-height: 100px;
-  background-color: purple;
+  border-right: 1px solid #b5b5b5;
 }
 .area2 .work-list .this-year-3{
   padding-left: 20px;
   width: 10%;
   line-height: 100px;
-  background-color: purple;
+  border-right: 1px solid #b5b5b5;
 }
 .area2 .work-list .this-year-4{
   padding-left: 20px;
   width: 10%;
   line-height: 100px;
-  background-color: purple;
+  border-right: 1px solid #b5b5b5;
 }
 .area2 .work-list .this-year-5{
   padding-left: 20px;
   width: 10%;
   line-height: 100px;
-  background-color: purple;
+  border-right: 1px solid #b5b5b5;
 }
 
 
 .area2 .work-list .commonlist .cancel-icon {
   cursor: pointer;
   height: 25px;
-  margin: 37px;
+  position: relative;
+  top: 37px;
+  left: 230px;
 }
 
 .area2 .work-list .commonlist .cancel-icon:hover{
   font-size: 30px;
   transition: .3s;
+}
+
+.area2 .work-list .commonlist .save-icon {
+  cursor: pointer;
+  height: 25px;
+  position: relative;
+  top: 37px;
+  left: 141px
+}
+
+.area2 .work-list .commonlist .save-icon:hover{
+  font-size: 30px;
+  transition: .3s;
+  
+}
+
+.area2 .work-list .commonlist .modify-icon {
+  cursor: pointer;
+  height: 25px;
+  position: relative;
+  top: 37px;
+  left: 50px
+}
+
+.area2 .work-list .commonlist .modify-icon:hover{
+  font-size: 30px;
+  transition: .3s;
+  
+}
+
+
+.area2 .before-page {
+  font-size: 50px;
+  cursor: pointer;
+  color: black;
+  position: relative;
+  right: 20px;
+}
+
+.area2 .next-page {
+  font-size: 50px;
+  cursor: pointer;
+  color: black;
+  position: relative;
+  left: 450px
+}
+
+.area2 .work-list .commonlist .list-1 .newinput{
+  margin-right: 40px;
+  width: 300px;
+  height: 25px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 20px;
+  position: relative;
+  right: 10px;
+  bottom: 8px;
+}
+
+.area2 .work-list .commonlist .list-2 .newinput-2{
+  margin-right: 40px;
+  width: 300px;
+  height: 25px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 20px;
+  position: relative;
+  right: 10px;
+  bottom: 8px;
+}
+
+.area2 .work-list .commonlist .list-3 .newinput-3{
+  margin-right: 40px;
+  width: 300px;
+  height: 25px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 20px;
+  position: relative;
+  right: 10px;
+  bottom: 8px;
+}
+
+.area2 .work-list .commonlist .list-4 .newinput-4{
+  margin-right: 40px;
+  width: 300px;
+  height: 25px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 20px;
+  position: relative;
+  right: 10px;
+  bottom: 8px;
+}
+
+.area2 .work-list .commonlist .list-5 .newinput-5{
+  margin-right: 40px;
+  width: 300px;
+  height: 25px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 20px;
+  position: relative;
+  right: 10px;
+  bottom: 8px;
 }
