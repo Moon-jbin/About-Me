@@ -5,6 +5,7 @@ const thisYear = document.querySelector('.this-year-1')
 const deleteEl = document.querySelector('.delete-1')
 const saveEl = document.querySelector('.save-1')
 const modifyEl = document.querySelector('.modify-1')
+const checkEl = document.querySelector('.check-1')
 
 const schListTwoEl = document.querySelector('.input-2')
 const inputTwoEl = document.querySelector('.icon-2')
@@ -13,6 +14,7 @@ const thisYearTwo = document.querySelector('.this-year-2')
 const deleteTwoEl = document.querySelector('.delete-2')
 const saveTwoEl = document.querySelector('.save-2')
 const modifyTwoEl = document.querySelector('.modify-2')
+const checkTwoEl = document.querySelector('.check-2')
 
 const schListThreeEl = document.querySelector('.input-3')
 const inputThreeEl = document.querySelector('.icon-3')
@@ -21,6 +23,7 @@ const thisYearThree = document.querySelector('.this-year-3')
 const deleteThreeEl = document.querySelector('.delete-3')
 const saveThreeEl = document.querySelector('.save-3');
 const modifyThreeEl = document.querySelector('.modify-3')
+const checkThreeEl = document.querySelector('.check-3')
 
 const schListFourEl = document.querySelector('.input-4')
 const inputFourEl = document.querySelector('.icon-4')
@@ -29,6 +32,7 @@ const thisYearFour = document.querySelector('.this-year-4')
 const deleteFourEl = document.querySelector('.delete-4')
 const saveFourEl = document.querySelector('.save-4');
 const modifyFourEl = document.querySelector('.modify-4')
+const checkFourEl = document.querySelector('.check-4')
 
 const schListFiveEl = document.querySelector('.input-5')
 const inputFiveEl = document.querySelector('.icon-5')
@@ -37,12 +41,43 @@ const thisYearFive = document.querySelector('.this-year-5')
 const deleteFiveEl = document.querySelector('.delete-5')
 const saveFiveEl = document.querySelector('.save-5');
 const modifyFiveEl = document.querySelector('.modify-5')
+const checkFiveEl = document.querySelector('.check-5')
 
+
+//icon style
+
+checkEl.style.display = "none";
+checkTwoEl.style.display = "none";
+checkThreeEl.style.display = "none";
+checkFourEl.style.display = "none";
+checkFiveEl.style.display = "none";
+
+modifyEl.style.display = "none";
+modifyTwoEl.style.display = "none";
+modifyThreeEl.style.display = "none";
+modifyFourEl.style.display = "none";
+modifyFiveEl.style.display = "none";
+
+saveEl.style.display = "none";
+saveTwoEl.style.display = "none";
+saveThreeEl.style.display = "none";
+saveFourEl.style.display = "none";
+saveFiveEl.style.display = "none";
+
+deleteEl.style.display = "none";
+deleteTwoEl.style.display = "none";
+deleteThreeEl.style.display = "none";
+deleteFourEl.style.display = "none";
+deleteFiveEl.style.display = "none";
 
 // Puls
 
 inputEl.addEventListener('click',function(){
   if(schListEl.value){
+    modifyEl.style.display = "block";
+    saveEl.style.display = "block";
+    deleteEl.style.display = "block";
+
     if(listOne.textContent){
       listOne.removeChild(listOne.lastElementChild)
 
@@ -72,6 +107,10 @@ inputEl.addEventListener('click',function(){
 
 inputTwoEl.addEventListener ('click',function(){
   if(schListTwoEl.value){
+    modifyTwoEl.style.display = "block";
+    saveTwoEl.style.display = "block";
+    deleteTwoEl.style.display = "block";
+
     if(listTwo.textContent){
       listTwo.removeChild(listTwo.lastElementChild)
       const newChildTwo = document.createElement('div')
@@ -98,6 +137,10 @@ inputTwoEl.addEventListener ('click',function(){
 
 inputThreeEl.addEventListener('click',function(){
   if(schListThreeEl.value){
+    modifyThreeEl.style.display = "block";
+    saveThreeEl.style.display = "block";
+    deleteThreeEl.style.display = "block";
+
     if(listThree.textContent){
       listThree.removeChild(listThree.lastElementChild)
       const newChildThree = document.createElement('div')
@@ -125,6 +168,10 @@ inputThreeEl.addEventListener('click',function(){
 
 inputFourEl.addEventListener('click',function(){
   if(schListFourEl.value){
+    modifyFourEl.style.display = "block";
+    saveFourEl.style.display = "block";
+    deleteFourEl.style.display = "block";
+
     if(listFour.textContent){
       listFour.removeChild(listFour.lastElementChild)
       const newChildFour = document.createElement('div')
@@ -150,6 +197,10 @@ inputFourEl.addEventListener('click',function(){
 
 inputFiveEl.addEventListener('click',function(){
   if(schListFiveEl.value){
+    modifyFiveEl.style.display = "block";
+    saveFiveEl.style.display = "block";
+    deleteFiveEl.style.display = "block";
+
     if(listFive.textContent){
       listFive.removeChild(listFive.lastElementChild)
       const newChildFive = document.createElement('div')
@@ -178,6 +229,11 @@ inputFiveEl.addEventListener('click',function(){
 // delete
 
 deleteEl.addEventListener('click', function () {
+  saveEl.style.display = "none";
+  deleteEl.style.display = "none";
+  modifyEl.style.display = "none";
+  checkEl.style.display = "none";
+
   while(listOne.hasChildNodes()){
   listOne.removeChild(listOne.lastElementChild)
   thisYear.textContent = ' '
@@ -186,6 +242,11 @@ deleteEl.addEventListener('click', function () {
 })
 
 deleteTwoEl.addEventListener('click', function () {
+  modifyTwoEl.style.display = "none";
+  saveTwoEl.style.display = "none";
+  deleteTwoEl.style.display = "none";
+  checkTwoEl.style.display = "none";
+
   while(listTwo.hasChildNodes()){
   listTwo.removeChild(listTwo.lastElementChild)
   thisYearTwo.textContent = ' '
@@ -195,6 +256,11 @@ deleteTwoEl.addEventListener('click', function () {
 })
 
 deleteThreeEl.addEventListener('click', function () {
+  checkThreeEl.style.display = "none";
+  modifyThreeEl.style.display = "none";
+  saveThreeEl.style.display = "none";
+  deleteThreeEl.style.display = "none"; 
+
   while(listThree.hasChildNodes()){
   listThree.removeChild(listThree.lastElementChild)
   thisYearThree.textContent = ' '
@@ -203,6 +269,11 @@ deleteThreeEl.addEventListener('click', function () {
 })
 
 deleteFourEl.addEventListener('click', function () {
+  checkFourEl.style.display = "none";
+  modifyFourEl.style.display = "none";
+  saveFourEl.style.display = "none";
+  deleteFourEl.style.display = "none";
+
   while(listFour.hasChildNodes()){
   listFour.removeChild(listFour.lastElementChild)
   thisYearFour.textContent = ' '
@@ -211,6 +282,11 @@ deleteFourEl.addEventListener('click', function () {
 })
 
 deleteFiveEl.addEventListener('click', function () {
+  checkFiveEl.style.display = "none";
+  modifyFiveEl.style.display = "none";
+  saveFiveEl.style.display = "none";
+  deleteFiveEl.style.display = "none";
+
   while(listFive.hasChildNodes()){
   listFive.removeChild(listFive.lastElementChild)
   thisYearFive.textContent = ' '
@@ -254,7 +330,7 @@ saveFiveEl.addEventListener('click',function() {
 
 // modify
 
-modifyEl.addEventListener('click',function() {
+modifyEl.addEventListener('click', function() {
   if(listOne.textContent){
     const newInput = document.createElement('input')
     newInput.setAttribute("type","text")
@@ -283,8 +359,8 @@ modifyTwoEl.addEventListener('click',function() {
       }
     });
 
-modifyThreeEl.addEventListener('click',function() {
- if(listThree.textContent){
+modifyThreeEl.addEventListener('click',function() {  
+  if(listThree.textContent){
     const newInputThree = document.createElement('input')
     newInputThree.setAttribute("type","text")
     newInputThree.setAttribute("class","newinput-3")
@@ -323,3 +399,159 @@ modifyFiveEl.addEventListener('click',function() {
       return
       }
 });
+// modify & check change
+// const가 왜 사용이 안될지..? 알아보기..!!
+
+
+var isClick = false;
+function toggleClick() {
+  isClick = !isClick;
+  if (isClick){
+    modifyEl.style.display = "none";
+    checkEl.style.display = "block";
+  }  
+  else{
+    modifyEl.style.display = "block";
+    checkEl.style.display = "none";
+  }
+}
+modifyEl.addEventListener('click', toggleClick)
+checkEl.addEventListener('click', toggleClick)
+
+
+var isClickTwo = false;
+function toggleClickTwo() {
+  isClickTwo = !isClickTwo;
+  if (isClickTwo){
+    modifyTwoEl.style.display = "none";
+    checkTwoEl.style.display = "block";
+  }  
+  else{
+    modifyTwoEl.style.display = "block";
+    checkTwoEl.style.display = "none";
+  }
+}
+modifyTwoEl.addEventListener('click', toggleClickTwo)
+checkTwoEl.addEventListener('click', toggleClickTwo)
+
+
+var isClickThree= false;
+function toggleClickThree() {
+  isClickThree = !isClickThree;
+  if (isClickThree){
+    modifyThreeEl.style.display = "none";
+    checkThreeEl.style.display = "block";
+  }  
+  else{
+    modifyThreeEl.style.display = "block";
+    checkThreeEl.style.display = "none";
+  }
+}
+modifyThreeEl.addEventListener('click', toggleClickThree)
+checkThreeEl.addEventListener('click', toggleClickThree)
+
+
+var isClickFour = false;
+function toggleClickFour() {
+  isClickFour = !isClickFour;
+  if (isClickFour){
+    modifyFourEl.style.display = "none";
+    checkFourEl.style.display = "block";
+  }  
+  else{
+    modifyFourEl.style.display = "block";
+    checkFourEl.style.display = "none";
+  }
+}
+modifyFourEl.addEventListener('click', toggleClickFour)
+checkFourEl.addEventListener('click', toggleClickFour)
+
+
+var isClickFive = false;
+function toggleClickFive() {
+  isClickFive = !isClickFive;
+  if (isClickFive){
+    modifyFiveEl.style.display = "none";
+    checkFiveEl.style.display = "block";
+  }  
+  else{
+    modifyFiveEl.style.display = "block";
+    checkFiveEl.style.display = "none";
+  }
+}
+modifyFiveEl.addEventListener('click', toggleClickFive)
+checkFiveEl.addEventListener('click', toggleClickFive)
+
+
+
+
+
+//  modify & check
+
+checkEl.addEventListener('click',function() {
+  const reWriteInput = document.querySelector('.newinput');
+  const newReWrite = document.createElement('div')
+
+  newReWrite.appendChild(document.createTextNode(reWriteInput.value))
+  listOne.insertBefore(newReWrite, listOne.lastElementChild)
+  listOne.removeChild(listOne.lastElementChild)
+  
+  localStorage.test = JSON.stringify(listOne.textContent)
+  thisYear.textContent = new Date().toLocaleTimeString();
+  
+ 
+})
+
+checkTwoEl.addEventListener('click',function() {
+  const reWriteInputTwo = document.querySelector('.newinput-2');
+  const newReWriteTwo = document.createElement('div')
+
+  newReWriteTwo.appendChild(document.createTextNode(reWriteInputTwo.value))
+  listTwo.insertBefore(newReWriteTwo, listTwo.lastElementChild)
+  listTwo.removeChild(listTwo.lastElementChild)
+  
+  localStorage.testTwo = JSON.stringify(listTwo.textContent)
+  thisYearTwo.textContent = new Date().toLocaleTimeString();
+ 
+})
+
+checkThreeEl.addEventListener('click',function() {
+  const reWriteInputThree = document.querySelector('.newinput-3');
+  const newReWriteThree = document.createElement('div')
+
+  newReWriteThree.appendChild(document.createTextNode(reWriteInputThree.value))
+  listThree.insertBefore(newReWriteThree, listThree.lastElementChild)
+  listThree.removeChild(listThree.lastElementChild)
+  
+  localStorage.testThree = JSON.stringify(listThree.textContent)
+  thisYearThree.textContent = new Date().toLocaleTimeString();
+ 
+})
+
+checkFourEl.addEventListener('click',function() {
+  const reWriteInputFour = document.querySelector('.newinput-4');
+  const newReWriteFour = document.createElement('div')
+  
+  newReWriteFour.appendChild(document.createTextNode(reWriteInputFour.value))
+  listFour.insertBefore(newReWriteFour, listFour.lastElementChild)
+  listFour.removeChild(listFour.lastElementChild)
+  
+  localStorage.testFour = JSON.stringify(listFour.textContent)
+  thisYearFour.textContent = new Date().toLocaleTimeString();
+
+
+ 
+})
+
+checkFiveEl.addEventListener('click',function() {
+  const reWriteInputFive = document.querySelector('.newinput-5');
+  const newReWriteFive = document.createElement('div')
+  
+  newReWriteFive.appendChild(document.createTextNode(reWriteInputFive.value))
+  listFive.insertBefore(newReWriteFive, listFive.lastElementChild)
+  listFive.removeChild(listFive.lastElementChild)
+  
+  localStorage.testFive = JSON.stringify(listFive.textContent)
+  thisYearFive.textContent = new Date().toLocaleTimeString();
+ 
+})

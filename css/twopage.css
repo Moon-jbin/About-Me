@@ -1,7 +1,7 @@
 .inner2 {
   display: flex;
   width:1500px;
-  margin: 0 auto;
+  margin: 50px auto;
   background-color: none;
 }
 
@@ -127,6 +127,7 @@
   font-family: 'Nanum Pen Script', cursive;
   font-size: 20px;
   box-shadow: 4px 4px 10px #c7c4c4;
+  position: relative;
 }
 
 .area2 .work-list .commonlist .list-1 {
@@ -202,12 +203,27 @@
 }
 
 
+.area2 .work-list .commonlist .check-icon{
+  cursor: pointer;
+  height: 25px;
+  right: 500px;
+  top: 37px;
+  right: 285px;
+  position: absolute;
+  }
+
+  .area2 .work-list .commonlist .check-icon:hover{
+    font-size: 30px;
+    transition: .3s;
+    color: royalblue;
+  }
+
 .area2 .work-list .commonlist .cancel-icon {
   cursor: pointer;
   height: 25px;
-  position: relative;
+  position: absolute;
   top: 37px;
-  left: 230px;
+  right: 60px;
 }
 
 .area2 .work-list .commonlist .cancel-icon:hover{
@@ -218,9 +234,9 @@
 .area2 .work-list .commonlist .save-icon {
   cursor: pointer;
   height: 25px;
-  position: relative;
+  position: absolute;
   top: 37px;
-  left: 141px
+  right: 167px;
 }
 
 .area2 .work-list .commonlist .save-icon:hover{
@@ -232,16 +248,16 @@
 .area2 .work-list .commonlist .modify-icon {
   cursor: pointer;
   height: 25px;
-  position: relative;
   top: 37px;
-  left: 50px
+  right: 285px;
+  position: absolute;
 }
 
 .area2 .work-list .commonlist .modify-icon:hover{
   font-size: 30px;
   transition: .3s;
-  
 }
+
 
 
 .area2 .before-page {
@@ -257,7 +273,7 @@
   cursor: pointer;
   color: black;
   position: relative;
-  left: 450px
+  left: 450px;
 }
 
 .area2 .work-list .commonlist .list-1 .newinput{
