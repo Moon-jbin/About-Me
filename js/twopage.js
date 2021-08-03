@@ -1,10 +1,9 @@
+
 const inputEl = document.querySelector('.icon-1');
 const workEl = document.querySelector('.work-list');
 const schListEl = document.querySelector('.input-1');
 const bottomAreaEl = document.querySelector('.area2');
 const realMoreEl = document.querySelector('.real-more')
-
-realMoreEl.style.display="none"
 
 var s = 0;
 // var d = 0;
@@ -12,6 +11,8 @@ var s = 0;
 // var c = 0;
 // var l = 0;
 // var t = 0;
+realMoreEl.style.display="none"
+
 inputEl.addEventListener('click',function(){
   s += 1;
   // d += 1;
@@ -80,7 +81,7 @@ inputEl.addEventListener('click',function(){
     // text 넣은 후 입력 코드
 
     const newChild = document.createElement('div')
-    newChild.appendChild(document.createTextNode(schListEl.value))
+    newChild.appendChild(document.createTextNode(`${indexS}.   ` + schListEl.value))
     listOne.insertBefore(newChild, listOne.lastElementChild)
   
     schListEl.value = ''
@@ -97,8 +98,8 @@ inputEl.addEventListener('click',function(){
 
     //save
     saveEl.addEventListener('click',function() {
-      localStorage.setItem(indexS,listOne.textContent)
-      }
+      localStorage.setItem(indexS, listOne.textContent)
+  }
     )
 
     //modify
@@ -144,7 +145,7 @@ inputEl.addEventListener('click',function(){
     )
     
     // 더보기 기능
-    if(workEl.childElementCount > 5){
+    if(workEl.childElementCount > 6){
       realMoreEl.style.display="block"
       realMoreEl.style.width="45px"
       commonEl.style.display='none'
@@ -157,8 +158,9 @@ inputEl.addEventListener('click',function(){
       })
       
     }
-    
 
+
+    
     // function getScrollPercentage(){
     //   return (window.scrollY + window.innerHeight)/
     //   document.body.clientHeight * 100

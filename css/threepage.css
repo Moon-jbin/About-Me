@@ -1,0 +1,33 @@
+.inner {
+  width: 90%;
+  border: 1px solid orange;
+  margin: 30px auto;
+  display: flex;
+}
+
+.inner .area1{
+  width: 30%;
+  margin-right: 200px;          
+  border: 1px solid black;
+}
+
+.inner .area1 .lists {
+  width: 80%;
+  text-align: center;
+  border: 2px solid purple;
+  margin: 20px auto 20px;
+  font-size: 25px;
+  font-family: 'Nanum Pen Script', cursive;
+  
+}
+
+.inner .area2{
+  right: 0;
+  width: 70%;
+  height: 700px;         /*나중에 삭제*/ 
+  border: 1px solid red;
+}
+
+
+
+
