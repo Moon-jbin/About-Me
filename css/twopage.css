@@ -1,5 +1,7 @@
 .inner2 {
-  display: flex;
+  /* position: absolute; */
+  right: 100px;
+  display: block;
   width:1500px;
   margin: 50px auto;
   background-color: none;
@@ -7,19 +9,26 @@
 
 /* 왼쪽 area1 */
 .area1{
-  width: 30%;
-  height: 600px;
+  width: 70%;
+  height: 100px;
   background-color: #fff;
-  margin: 20px 20px 20px 20px;
-  border: #d19bf5 solid 2px;
-  border-radius: 10%;
+  margin: 20px auto;
+  border: #d19bf5 solid 1px;
+  border-radius: 20px;
   position: relative;
   box-shadow: 4px 4px 10px #d19bf5;
 }
 
+.line-style {
+  margin: 40px auto;
+  width: 40%;
+  height: 20px;
+  border-bottom: 2px solid #dad6d8;
+}
+
 .area1 .area1-title{
   background-color: none;
-  right: 43%;
+  right: 65%;
   position: absolute;
   margin: 20px auto;
   font-size: 20px;
@@ -36,74 +45,43 @@
 }
 
 .area1 .schedule .sch-lists{
-  border-bottom: rgb(170, 167, 167) dashed .5px;
   width: 100%;
   padding: 4px 10px;
   box-sizing: border-box;
   border-radius: 5px;
   outline: none;
+  display: flex;
 
-}
-
-.area1 .schedule .sch-list-5{
-  border-bottom: none;
 }
 
 .area1 .schedule .sch-list-1 input{
-  margin-right: 40px;
-  width: 300px;
-  height: 25px;
-  padding: 4px 10px;
-  border-radius: 10px;
-  font-family: 'Nanum Pen Script', cursive;
-  font-size: 20px;
-}
-.area1 .schedule .sch-list-2 input{
-  margin-right: 40px;
-  width: 300px;
-  height: 25px;
-  padding: 4px 10px;
-  border-radius: 10px;
-  font-family: 'Nanum Pen Script', cursive;
-  font-size: 20px;
-}
-.area1 .schedule .sch-list-3 input{
-  margin-right: 40px;
-  width: 300px;
-  height: 25px;
-  padding: 4px 10px;
-  border-radius: 10px;
-  font-family: 'Nanum Pen Script', cursive;
-  font-size: 20px;
-}
-.area1 .schedule .sch-list-4 input{
-  margin-right: 40px;
-  width: 300px;
-  height: 25px;
-  padding: 4px 10px;
-  border-radius: 10px;
-  font-family: 'Nanum Pen Script', cursive;
-  font-size: 20px;
-}
-.area1 .schedule .sch-list-5 input{
-  margin-right: 40px;
-  width: 300px;
-  height: 25px;
-  padding: 4px 10px;
+  position: relative;
+  left: 20px; 
+  width: 60%;
+  height: 30px;
+  bottom: 8px;
   border-radius: 10px;
   font-family: 'Nanum Pen Script', cursive;
   font-size: 20px;
 }
 
-.schedule .material-icons{
+.schedule .after-icon{
+  width: 350px;
+  height: 84px;
+  border: 1px solid #dad6d8;
+  border-radius: 20px;
   position: relative;
-  top: 6px;
-  right: 10px;
-}
-.schedule .material-icons:hover{
-  cursor: pointer;
+  bottom: 57px;
+  left: 40px;
+  font-family: 'Jua', sans-serif;
   font-size: 30px;
-  transition: .3s;
+  color: #dad6d8
+}
+.schedule .after-icon:hover{
+  cursor: pointer;
+  background-color: #dad6d8;
+  box-shadow: 4px 4px 10px #a7a4a5;
+  color: black
 }
 
 
@@ -113,7 +91,11 @@
 /* 오른쪽 area2 */
 .area2{
   width: 70%;
+  margin: 60px auto;
+  height: 500px;
+  /* overflow: hidden; */
 }
+
 
 .area2 .work-list .commonlist{
   display: flex;
@@ -123,7 +105,7 @@
   box-sizing: border-box;
   background-color: #fff  ;
   border-radius: 20px;
-  margin: 24px;
+  margin: 20px auto;
   font-family: 'Nanum Pen Script', cursive;
   font-size: 20px;
   box-shadow: 4px 4px 10px #c7c4c4;
@@ -138,70 +120,13 @@
 
 }
 
-/* .area2 .work-list .list-2 {
-  width: 505px;
-  padding-left: 40px;
-  margin-top: 37px;
-  height: 20px;
 
-}
-
-.area2 .work-list .list-3 {
-  width: 505px;
-  padding-left: 40px;
-  margin-top: 37px;
-  height: 20px;
-
-}
-
-.area2 .work-list .list-4 {
-  width: 505px;
-  padding-left: 40px;
-  margin-top: 37px;
-  height: 20px;
-
-}
-
-.area2 .work-list .list-5 {
-  width: 505px;
-  padding-left: 40px;
-  margin-top: 37px;
-  height: 20px;
-
-} */
 
 .area2 .work-list .this-year-1{
-  padding-left: 20px;
-  width: 10%;
+  width: 100px;
   line-height: 100px;
   border-right: 1px solid #b5b5b5;
 }
-
-/* .area2 .work-list .this-year-2{
-  padding-left: 20px;
-  width: 10%;
-  line-height: 100px;
-  border-right: 1px solid #b5b5b5;
-}
-.area2 .work-list .this-year-3{
-  padding-left: 20px;
-  width: 10%;
-  line-height: 100px;
-  border-right: 1px solid #b5b5b5;
-}
-.area2 .work-list .this-year-4{
-  padding-left: 20px;
-  width: 10%;
-  line-height: 100px;
-  border-right: 1px solid #b5b5b5;
-}
-.area2 .work-list .this-year-5{
-  padding-left: 20px;
-  width: 10%;
-  line-height: 100px;
-  border-right: 1px solid #b5b5b5;
-} */
-
 
 .area2 .work-list .commonlist .check-icon{
   cursor: pointer;
@@ -289,54 +214,43 @@
   bottom: 8px;
 }
 
-.area2 .work-list .commonlist .list-2 .newinput-2{
-  margin-right: 40px;
-  width: 300px;
-  height: 25px;
-  padding: 4px 10px;
-  border-radius: 10px;
-  font-family: 'Nanum Pen Script', cursive;
-  font-size: 20px;
+
+.area2 .work-list .real-more{
   position: relative;
-  right: 10px;
-  bottom: 8px;
+  font-size: 35px;
+  text-align:center;
+  justify-content: center;
+  height: 45px;
+  margin: auto;
+  border: 1px solid #b5b5b5;
+  border-radius: 50%;
+  color: #b5b5b5;
+  line-height: 38px;
+  font-weight: 700;
+  box-shadow: 1px 1px 5px #b5b5b5;
 }
 
-.area2 .work-list .commonlist .list-3 .newinput-3{
-  margin-right: 40px;
-  width: 300px;
-  height: 25px;
-  padding: 4px 10px;
-  border-radius: 10px;
-  font-family: 'Nanum Pen Script', cursive;
-  font-size: 20px;
-  position: relative;
-  right: 10px;
-  bottom: 8px;
+.area2 .work-list .real-more:hover{
+  border: 1px solid #d19bf5;
+  background-color: #d19bf5;
+  color: #fff;
+  box-shadow: 1px 1px 10px #644a75;
 }
 
-.area2 .work-list .commonlist .list-4 .newinput-4{
-  margin-right: 40px;
-  width: 300px;
-  height: 25px;
-  padding: 4px 10px;
-  border-radius: 10px;
-  font-family: 'Nanum Pen Script', cursive;
-  font-size: 20px;
+.prev-icon {
   position: relative;
-  right: 10px;
-  bottom: 8px;
+  margin: 0 auto;
+  right: 150px;
+  font-size: 40px;
+  text-decoration-line: none;
+  color: black;
 }
 
-.area2 .work-list .commonlist .list-5 .newinput-5{
-  margin-right: 40px;
-  width: 300px;
-  height: 25px;
-  padding: 4px 10px;
-  border-radius: 10px;
-  font-family: 'Nanum Pen Script', cursive;
-  font-size: 20px;
+.next-icon{
   position: relative;
-  right: 10px;
-  bottom: 8px;
+  margin: 0 auto;
+  bottom: 12px;
+  left: 930px;
+  font-size: 40px;
+  color: black;
 }
