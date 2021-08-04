@@ -3,33 +3,20 @@ const inputEl = document.querySelector('.icon-1');
 const workEl = document.querySelector('.work-list');
 const schListEl = document.querySelector('.input-1');
 const bottomAreaEl = document.querySelector('.area2');
-const realMoreEl = document.querySelector('.real-more')
+const realMoreEl = document.querySelector('.real-more');
+const allKillEl = document.querySelector('.all-kill');
 
-var s = 0;
-// var d = 0;
-// var m = 0;
-// var c = 0;
-// var l = 0;
-// var t = 0;
-realMoreEl.style.display="none"
+let s = 0;
+
+realMoreEl.style.display="none";
 
 inputEl.addEventListener('click',function(){
   s += 1;
-  // d += 1;
-  // m += 1;
-  // c += 1;
-  // l += 1;
-  // t += 1;
 
   if (schListEl.value){
     const indexS = `${s}`;
-    // const indexD = `delete-${d}`;
-    // const indexM = `modify-${m}`;
-    // const indexC = `check-${c}`;
-    // const indexL = `listtext-${l}`;
-    // const indexT = `storage-${t}`;
 
-    const commonEl = document.createElement('div');
+    var commonEl = document.createElement('div');
     commonEl.setAttribute("class", "commonlist");
     commonEl.setAttribute("id", `${indexS}`)
 
@@ -81,7 +68,9 @@ inputEl.addEventListener('click',function(){
     // text 넣은 후 입력 코드
 
     const newChild = document.createElement('div')
-    newChild.appendChild(document.createTextNode(`${indexS}.   ` + schListEl.value))
+    newChild.setAttribute("id",`${indexS}`)
+    newChild.appendChild(document.createTextNode(schListEl.value))
+    // `${indexS}.   ` 
     listOne.insertBefore(newChild, listOne.lastElementChild)
   
     schListEl.value = ''
@@ -91,16 +80,27 @@ inputEl.addEventListener('click',function(){
     //delete
     deleteEl.addEventListener('click',function(){
       s -= 1;
-        workEl.removeChild(commonEl)
-        delete localStorage.removeItem(indexS)
+      workEl.removeChild(commonEl)
+      delete localStorage.removeItem(indexS)
       }
     )
+
+    allKillEl.addEventListener('click',function(){
+        s = 0;
+        localStorage.clear()
+        commonEl.remove()
+      })
+
+    
+   
+
+
 
     //save
     saveEl.addEventListener('click',function() {
       localStorage.setItem(indexS, listOne.textContent)
-  }
-    )
+       }
+     )
 
     //modify
     modifyEl.addEventListener('click', function() {
@@ -177,6 +177,15 @@ inputEl.addEventListener('click',function(){
     //     }
     //   }
     // )
-}
+  }
+
 }
 )
+
+
+// const commonEl
+// allKillEl.addEventListener('click',function(){
+//   s = 0;
+//   localStorage.clear()
+//   commonEl.remove()
+// })

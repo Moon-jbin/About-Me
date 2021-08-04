@@ -35,6 +35,21 @@
   font-family: 'Nanum Brush Script', cursive;
   font-weight: 900;
 }
+.area1 .area1-title .all-kill{
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  left: 280px;
+  bottom: 20px;
+  border-radius: 10px;
+}
+
+.area1 .area1-title .all-kill:hover{
+  color: #fff;
+  background-color: black;
+}
+
+
 
 .area1 .schedule {
   margin-top: 60px;
