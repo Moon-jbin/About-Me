@@ -16,7 +16,7 @@
   border: #d19bf5 solid 1px;
   border-radius: 20px;
   position: relative;
-  box-shadow: 4px 4px 10px #d19bf5;
+  box-shadow: 1px 6px 10px #e7c4ff;
 }
 
 .line-style {
@@ -28,7 +28,7 @@
 
 .area1 .area1-title{
   background-color: none;
-  right: 65%;
+  right: 55%;
   position: absolute;
   margin: 20px auto;
   font-size: 20px;
@@ -36,19 +36,37 @@
   font-weight: 900;
 }
 .area1 .area1-title .all-kill{
-  border: 1px solid black;
   text-align: center;
   position: relative;
-  left: 280px;
-  bottom: 20px;
+  left: 175px;
+  bottom: 0px;
   border-radius: 10px;
+  color: #b5b5b5;
 }
 
 .area1 .area1-title .all-kill:hover{
-  color: #fff;
-  background-color: black;
+  color: black;
+  cursor: pointer;
 }
 
+.area1 .midle-line{
+  position: relative;
+  color: #b5b5b5;
+  left: 172px;
+}
+
+.area1 .all-save{
+  text-align: center;
+  position: relative;
+  left: 170px;
+  bottom: 0px;
+  color: #b5b5b5
+}
+
+.area1 .area1-title .all-save:hover{
+  color: black;
+  cursor: pointer;
+}
 
 
 .area1 .schedule {
@@ -83,8 +101,8 @@
 .schedule .after-icon{
   width: 350px;
   height: 84px;
-  border: 1px solid #dad6d8;
-  border-radius: 20px;
+  /* border: 1px solid #dad6d8;
+  border-radius: 20px; */
   position: relative;
   bottom: 57px;
   left: 40px;
@@ -94,9 +112,10 @@
 }
 .schedule .after-icon:hover{
   cursor: pointer;
-  background-color: #dad6d8;
-  box-shadow: 4px 4px 10px #a7a4a5;
+  /* background-color: #dad6d8;
+  box-shadow: 4px 4px 6px #cccacb; */
   color: black
+
 }
 
 
@@ -129,10 +148,11 @@
 
 .area2 .work-list .commonlist .list-1 {
   margin-top: 37px;
-  width: 505px;
+  width:500px;
   height: 20px;
   padding-left: 40px;
-
+  position: absolute;
+  justify-content: center;
 }
 
 
@@ -141,6 +161,8 @@
   width: 100px;
   line-height: 100px;
   border-right: 1px solid #b5b5b5;
+  position: absolute;
+  right: 380px;
 }
 
 .area2 .work-list .commonlist .check-icon{
