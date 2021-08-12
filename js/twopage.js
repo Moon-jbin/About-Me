@@ -1,21 +1,25 @@
-
 const inputEl = document.querySelector('.icon-1');
 const workEl = document.querySelector('.work-list');
 const schListEl = document.querySelector('.input-1');
 const bottomAreaEl = document.querySelector('.area2');
 const realMoreEl = document.querySelector('.real-more');
 const allKillEl = document.querySelector('.all-kill');
-const allSaveEl = document.querySelector('.all-save')
+const allSaveEl = document.querySelector('.all-save');
 
+// new Swiper('.swiper-container',{
+//   slidesPerView: 3, // 한번에 보여줄 스라이드 개수
+//   spaceBetween: 800, // 슬라이드 사이 여백
+//   centeredSlides: true,
+//   loop: true
+// })
 
 let s = 0;
 
 realMoreEl.style.display="none";
 
-
-
 inputEl.addEventListener('click',function(){
-    s += 1;
+
+  s += 1;
   if (schListEl.value){
     const indexS = `${s}`;
     // localStorage.setItem(`${s}`,schListEl.value)
@@ -152,7 +156,7 @@ inputEl.addEventListener('click',function(){
       )
       
       // 더보기 기능
-      if(workEl.childElementCount > 6){
+      if(workEl.childElementCount > 4){
         realMoreEl.style.display="block"
         realMoreEl.style.width="45px"
         commonEl.style.display='none'
@@ -348,7 +352,7 @@ inputEl.addEventListener('click',function(){
 
 
 if(true){
-  for(var i =1; i <= localStorage.length; i++){
+  for( var i = 1; i <= localStorage.length; i++){
     const indexS = `${i}`;
 
     const commonEl = document.createElement('div');

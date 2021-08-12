@@ -1,15 +1,23 @@
-.inner2 {
-  /* position: absolute; */
-  right: 100px;
-  display: block;
-  width:1500px;
-  margin: 50px auto;
-  background-color: none;
+.swiper-container{
+  width: 100% ;
+  position: absolute;
+  /* background-color: black; */
 }
+
+
+.swiper-slide {
+  position: relative;
+  width: 800px;
+  height: 100%;
+  margin: 20px auto;
+  /* background-color: orange; */
+  /* border: 1px solid black; */
+}
+
 
 /* 왼쪽 area1 */
 .area1{
-  width: 70%;
+  width: 600px;
   height: 100px;
   background-color: #fff;
   margin: 20px auto;
@@ -21,14 +29,14 @@
 
 .line-style {
   margin: 40px auto;
-  width: 40%;
+  width: 400px;
   height: 20px;
   border-bottom: 2px solid #dad6d8;
 }
 
 .area1 .area1-title{
   background-color: none;
-  right: 55%;
+  right: 200px;
   position: absolute;
   margin: 20px auto;
   font-size: 20px;
@@ -38,7 +46,7 @@
 .area1 .area1-title .all-kill{
   text-align: center;
   position: relative;
-  left: 175px;
+  right: 250px;
   bottom: 0px;
   border-radius: 10px;
   color: #b5b5b5;
@@ -52,13 +60,13 @@
 .area1 .midle-line{
   position: relative;
   color: #b5b5b5;
-  left: 172px;
+  right: 250px;
 }
 
 .area1 .all-save{
   text-align: center;
   position: relative;
-  left: 170px;
+  right: 250px;
   bottom: 0px;
   color: #b5b5b5
 }
@@ -78,7 +86,7 @@
 }
 
 .area1 .schedule .sch-lists{
-  width: 100%;
+  width: 500px;
   padding: 4px 10px;
   box-sizing: border-box;
   border-radius: 5px;
@@ -99,16 +107,16 @@
 }
 
 .schedule .after-icon{
-  width: 350px;
+  width: 200px;
   height: 84px;
-  /* border: 1px solid #dad6d8;
-  border-radius: 20px; */
+  border: 1px solid #dad6d8;
+  /* border-radius: 20px; */
   position: relative;
   bottom: 57px;
-  left: 40px;
+  left: 60px;
   font-family: 'Jua', sans-serif;
   font-size: 30px;
-  color: #dad6d8
+  color: #dad6d8;
 }
 .schedule .after-icon:hover{
   cursor: pointer;
@@ -124,7 +132,7 @@
 
 /* 오른쪽 area2 */
 .area2{
-  width: 70%;
+  width: 700px;
   margin: 60px auto;
   height: 500px;
   /* overflow: hidden; */
@@ -157,13 +165,13 @@
 
 
 
-.area2 .work-list .this-year-1{
+/* .area2 .work-list .this-year-1{
   width: 100px;
   line-height: 100px;
   border-right: 1px solid #b5b5b5;
   position: absolute;
   right: 380px;
-}
+} */
 
 .area2 .work-list .commonlist .check-icon{
   cursor: pointer;
@@ -287,7 +295,16 @@
   position: relative;
   margin: 0 auto;
   bottom: 12px;
-  left: 930px;
+  left: 600px;
   font-size: 40px;
   color: black;
+}
+
+
+
+
+.two{
+  width: 500px;
+  height: 500px;
+  background-color: black;
 }

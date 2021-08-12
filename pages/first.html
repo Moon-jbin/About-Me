@@ -10,65 +10,175 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-  <link rel="icon" href="/favi.jpg">
-  <link rel="stylesheet" href="/css/twopage.css">
-
+  <!-- swiper -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js" integrity="sha512-kSI9CgGh60rJbNVeMJvfNX0UTKAq8LEOea/yKJQbFpIroxT7bf9/zUFXbnfsQP5F6xlOOHtCfBPgsE1ceiHnRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-  
+
+  <link rel="icon" href="/favi.jpg">
+  <link rel="stylesheet" href="/css/twopage.css">
   <script defer src="/js/twopage.js"></script>
   <title>Meaningful Day</title>
 </head>
 <body>
-  <div class="inner2"> 
-    <!-- inner 1 -->
-    <div class="area1">
-      <div class="area1-title">
-        오늘의 스케줄
-        <span class="all-save">모두 저장 </span>
-        <span class="midle-line">|</span>
-        <span class="all-kill">모두 삭제</span>
-      </div>
-      <ul class="schedule">
-        <li class="sch-lists sch-list-1">
-          <input  class="input-1" type="text" placeholder="  무엇을 할 계획인가요?"/>
-          <span class= "after-icon icon-1">등 록</span>
-        </li>
-      </ul>
-      <a href="./second.html">
-        <span class="material-icons next-icon">
-          arrow_forward
-        </span>
-      </a>
-    </div>
-
-    <!-- <a href="">
-      <span class="material-icons prev-icon">
-        arrow_back
-      </span>
-    </a> -->
-    <div class="line-style">
-      <a href="/index.html">
-       <span class="material-icons prev-icon">
-          arrow_back
-        </span>
-      </a>
-    </div>
-    
-
-    <!-- inner 2 -->
-    <div class="area2">
-      <div class="work-list">
-        <div id="id-more" class ="real-more">
-          +
-          <div>
-            
+  <div class="swiper-container">
+    <div  class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="area1">
+          <div class="area1-title">
+              오늘의 스케줄
+              <span class="all-save">모두 저장 </span>
+              <span class="midle-line">|</span>
+              <span class="all-kill">모두 삭제</span>
+          </div>
+            <ul class="schedule">
+              <li class="sch-lists sch-list-1">
+                <input  class="input-1" type="text" placeholder="  무엇을 할 계획인가요?"/>
+                <span class= "after-icon icon-1">등 록</span>
+              </li>
+            </ul>
+            <a href="./second.html">
+              <span class="material-icons next-icon">
+                arrow_forward
+              </span>
+            </a>
+          </div>
+      
+          <!-- <a href="">
+            <span class="material-icons prev-icon">
+              arrow_back
+            </span>
+          </a> -->
+          <div class="line-style">
+            <a href="/index.html">
+             <span class="material-icons prev-icon">
+                arrow_back
+              </span>
+            </a>
+          </div>
+          
+      
+          <!-- inner 2 -->
+          <div class="area2">
+            <div class="work-list">
+              <div id="id-more" class ="real-more">
+                +
+                <div>
+                  
+                </div>
+            </div>
           </div>
         </div>
       </div>
-      </a>
+        
+
+
+
+
+      <!-- <div class="swiper-slide">
+        <div class="area1">
+          <div class="area1-title">
+            오늘의 스케줄 2
+            <span class="all-save">모두 저장 </span>
+            <span class="midle-line">|</span>
+            <span class="all-kill">모두 삭제</span>
+          </div>
+          <ul class="schedule">
+            <li class="sch-lists sch-list-1">
+              <input  class="input-1" type="text" placeholder="  무엇을 할 계획인가요?"/>
+              <span class= "after-icon icon-1">등 록</span>
+            </li>
+          </ul>
+          <a href="./second.html">
+            <span class="material-icons next-icon">
+              arrow_forward
+            </span>
+          </a>
+        </div>
+    
+         <a href="">
+          <span class="material-icons prev-icon">
+            arrow_back
+          </span>
+        </a> -->
+        <!-- <div class="line-style">
+          <a href="/index.html">
+           <span class="material-icons prev-icon">
+              arrow_back
+            </span>
+          </a>
+        </div>
+         -->
+    
+        <!-- inner 2 -->
+        <!-- <div class="area2">
+          <div class="work-list">
+            <div id="id-more" class ="real-more">
+              +
+              <div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+      <!-- <div class="swiper-slide">
+        <div class="area1">
+          <div class="area1-title">
+            오늘의 스케줄 3
+            <span class="all-save">모두 저장 </span>
+            <span class="midle-line">|</span>
+            <span class="all-kill">모두 삭제</span>
+          </div>
+          <ul class="schedule">
+            <li class="sch-lists sch-list-1">
+              <input  class="input-1" type="text" placeholder="  무엇을 할 계획인가요?"/>
+              <span class= "after-icon icon-1">등 록</span>
+            </li>
+          </ul>
+          <a href="./second.html">
+            <span class="material-icons next-icon">
+              arrow_forward
+            </span>
+          </a>
+        </div> -->
+    
+        <!-- <a href="">
+          <span class="material-icons prev-icon">
+            arrow_back
+          </span>
+        </a> -->
+        <!-- <div class="line-style">
+          <a href="/index.html">
+           <span class="material-icons prev-icon">
+              arrow_back
+            </span>
+          </a>
+        </div>
+         -->
+    
+        <!-- inner 2 -->
+        <!-- <div class="area2">
+          <div class="work-list">
+            <div id="id-more" class ="real-more">
+              +
+              <div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
     </div>
+  </div>
 </body>
 </html>

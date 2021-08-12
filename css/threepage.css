@@ -7,10 +7,11 @@
 
 .inner .area1{
   width: 350px;
-  height: 350px;
+  height: 200px;
   margin-right: 60px;
   margin-top: 60px;          
   border: 1px solid black;
+  position: relative;
 }
 
 .inner .area1 .lists {
